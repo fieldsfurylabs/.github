@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="276" viewBox="0 0 500 276">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .tag { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+      .lift { transform-origin: 250px 138px; animation: lift 5s ease-in-out 0s infinite; }
+      .glow, .edge { opacity: 0.35; animation: breath 5s ease-in-out 0s infinite; }
+      @keyframes lift { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.025); } }
+      @keyframes breath { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) {
+        .lift { animation: none; transform: scale(1); }
+        .glow, .edge { animation: none; opacity: 0.7; }
+      }
+    </style>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D7DBDE" stop-opacity="0.04"/>
+      <stop offset="0.6" stop-color="#D7DBDE" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="garnet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9B1B30"/>
+      <stop offset="1" stop-color="#E0325F"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="54" y="54" width="392" height="168" rx="10"/></clipPath>
+    <filter id="g1" filterUnits="userSpaceOnUse" x="0" y="0" width="500" height="276"><feGaussianBlur stdDeviation="3.85"/></filter>
+    <filter id="g2" filterUnits="userSpaceOnUse" x="0" y="0" width="500" height="276"><feGaussianBlur stdDeviation="10.8"/></filter>
+    <filter id="g3" filterUnits="userSpaceOnUse" x="0" y="0" width="500" height="276"><feGaussianBlur stdDeviation="23.1"/></filter>
+  </defs>
+  <g class="lift">
+    <g class="glow" fill="#D5AD52">
+      <rect x="46.3" y="46.3" width="407.4" height="183.4" rx="17.7" fill-opacity="0.18" filter="url(#g3)"/>
+      <rect x="50.9" y="50.9" width="398.2" height="174.2" rx="13.1" fill-opacity="0.38" filter="url(#g2)"/>
+      <rect x="53.23" y="53.23" width="393.54" height="169.54" rx="10.77" fill-opacity="0.7" filter="url(#g1)"/>
+    </g>
+    <g clip-path="url(#card)">
+      <rect x="54" y="54" width="392" height="168" fill="#0E0F12"/>
+      <rect x="54" y="54" width="392" height="168" fill="url(#sheen)"/>
+      <rect x="54" y="54" width="392" height="3" fill="url(#garnet)"/>
+    </g>
+    <rect class="edge" x="54.5" y="54.5" width="391" height="167" rx="9.5" fill="none" stroke="#D5AD52" stroke-width="1"/>
+    <text class="tag" x="70" y="86" fill="#D5AD52" font-size="12">01 · In progress</text>
+    <text x="70" y="124" fill="#E8EAED" font-size="26" font-weight="600">BIBIM</text>
+    <text fill="#B9BEC4" font-size="14"><tspan x="70" y="156">A Linux distribution, in development.</tspan></text>
+    <text class="tag" x="70" y="198" fill="#FFB547" font-size="12">COMING SOON</text>
+  </g>
+</svg>

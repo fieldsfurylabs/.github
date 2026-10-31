@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="276" viewBox="0 0 500 276">
+  <defs>
+    <style>
+      text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .tag { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; }
+    </style>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D7DBDE" stop-opacity="0.04"/>
+      <stop offset="0.6" stop-color="#D7DBDE" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="garnet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9B1B30"/>
+      <stop offset="1" stop-color="#E0325F"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="54" y="54" width="392" height="168" rx="10"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect x="54" y="54" width="392" height="168" fill="#0E0F12"/>
+    <rect x="54" y="54" width="392" height="168" fill="url(#sheen)"/>
+    <rect x="54" y="54" width="392" height="3" fill="url(#garnet)"/>
+  </g>
+  <rect x="54.5" y="54.5" width="391" height="167" rx="9.5" fill="none" stroke="#C9CED3" stroke-opacity="0.28" stroke-width="1"/>
+  <text class="tag" x="70" y="86" fill="#8B9096" font-size="12">02 · Coming</text>
+  <text x="70" y="124" fill="#E8EAED" font-size="26" font-weight="600">APPS AND TOOLS</text>
+  <text class="tag" x="430" y="124" fill="#8B9096" font-size="12" text-anchor="end">COMING SOON</text>
+  <text fill="#B9BEC4" font-size="14"><tspan x="70" y="156">Productivity tools, a terminal music player,</tspan>
+    <tspan x="70" dy="21">and more. Each one small, each one built</tspan>
+    <tspan x="70" dy="21">to standard.</tspan></text>
+</svg>

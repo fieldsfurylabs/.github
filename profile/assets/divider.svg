@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24" role="img" aria-label="divider">
+  <defs>
+    <style>
+      .dot { animation: run 5s linear infinite; }
+      @keyframes run { from { transform: translateX(0); } to { transform: translateX(1200px); } }
+      @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+    </style>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#E0325F" stop-opacity="0"/><stop offset=".5" stop-color="#D5AD52"/><stop offset="1" stop-color="#E0325F" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect x="0" y="11" width="1200" height="2" fill="url(#g)" opacity=".5"/>
+  <circle class="dot" cx="-10" cy="12" r="4" fill="#FFB547"/>
+</svg>
